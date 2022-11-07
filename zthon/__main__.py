@@ -16,7 +16,7 @@ from .utils import (
     verifyLoggerGroup,
 )
 
-LOGS = logging.getLogger("Zelzal")
+LOGS = logging.getLogger("SEMO8L")
 cmdhr = Config.COMMAND_HAND_LER
 
 print(zthon.__copyright__)
@@ -25,7 +25,7 @@ print(f"المرخصة بموجب شروط  {zthon.__license__}")
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
-    LOGS.info("⌭ بـدء تنزيـل زدثــون ⌭")
+    LOGS.info("⌭ بـدء تنزيـل سيمو ⌭")
     zedub.loop.run_until_complete(setup_bot())
     LOGS.info("⌭ بـدء تشغيـل البـوت ⌭")
 except Exception as e:
@@ -45,12 +45,12 @@ async def startup_process():
     await verifyLoggerGroup()
     await load_plugins("plugins")
     await load_plugins("assistant")
-    print("➖➖➖➖➖ 𝗭𝗧𝗵𝗼𝗻™ ➖➖➖➖➖")
+    print("➖➖ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 ➖➖")
     print("تـم التنصـيب .. بنجـاح ✓")
     print(
-        f"⌔┊تـم تنصيـب زدثــون يـوزربـوت . . بنجـاح 🧸♥️ \n\n⌔┊تحيـاتي .. زلــزال الهيبــه\n⌔┊قنـاة السـورس ↶.\n🌐┊@ZedThon "
+        f"⌔┊تـم تنصيـب سورس سيمو  . . بنجـاح 🧸♥️ \n\n⌔┊تحيـاتي ..  الـمـبـرمـجہ سـمـيـر\n⌔┊قنـاة السـورس ↶.\n🌐┊@SEMO8L "
     )
-    print("➖➖➖➖➖ 𝗭𝗧𝗵𝗼𝗻™ ➖➖➖➖➖")
+    print("➖➖ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 ➖➖")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
