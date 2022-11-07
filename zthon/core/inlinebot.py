@@ -32,8 +32,8 @@ LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 MEDIA_PATH_REGEX = re.compile(r"(:?\<\bmedia:(:?(?:.*?)+)\>)")
-ZEDLOGO = "https://telegra.ph/file/f821d27af168206b472ad.mp4"
-MALATH_PIC = "https://telegra.ph/file/f821d27af168206b472ad.mp4"
+ZEDLOGO = "https://telegra.ph/file/07e7a64f4db7629437d3c.jpg"
+MALATH_PIC = "https://telegra.ph/file/07e7a64f4db7629437d3c.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -56,7 +56,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    malathy = f"**🧑🏻‍💻┊مـرحباً عـزيـزي {mention}**\n**🛂┊في قائمـة اوامـر المسـاعـده \n**⋆─┄─┄─┄─ ᶻᵗʰᵒᶰ ─┄─┄─┄─⋆**\n[ᯓ 𝗭𝗧𝗵𝗼𝗻 🦾♥️](https://t.me/ZedThon)\n\n"
+    malathy = f"**🧑🏻‍💻┊مـرحباً عـزيـزي {mention}**\n**🛂┊في قائمـة اوامـر المسـاعـده \n**⋆─┄─┄─┄─ ᶻᵗʰᵒᶰ ─┄─┄─┄─⋆**\n[ᯓ SOURCE SEMO ](https://t.me/SEMO8L)\n\n"
     if Config.OLDZED:
         buttons = [
             (Button.inline("ℹ️ معلومـات الملفـات", data="check"),),
@@ -256,11 +256,11 @@ async def inline_handler(event):  # sourcery no-metrics
             buttons = [
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("𝗭𝗧𝗵𝗼𝗻™ 𓅛", "https://t.me/ZedThon"),
+                    Button.url("𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎", "https://t.me/SEMO8L"),
                 )
             ]
-            ALIVE_PIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/f821d27af168206b472ad.mp4"
-            IALIVE_PIC = gvarstatus("IALIVE_PIC") or "https://telegra.ph/file/f821d27af168206b472ad.mp4"
+            ALIVE_PIC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/07e7a64f4db7629437d3c.jpg"
+            IALIVE_PIC = gvarstatus("IALIVE_PIC") or "https://telegra.ph/file/07e7a64f4db7629437d3c.jpg"
             if IALIVE_PIC:
                 ZED = [x for x in IALIVE_PIC.split()]
                 PIC = list(ZED)
@@ -384,7 +384,7 @@ async def inline_handler(event):  # sourcery no-metrics
             buttons = [Button.inline("فتـح الࢪسـاله 🧾", data=f"troll_{timestamp}")]
             result = builder.article(
                 title="رسـاله سـࢪيـه",
-                text=f"ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 **- ࢪسـالة سـࢪيـه 🗳**\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n\n**⌔╎الࢪسـاله لـ** {zilzal} \n**⌔╎هو فقط من يستطيع فتحهـا**",
+                text=f" 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 **- ࢪسـالة سـࢪيـه 🗳**\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n\n**⌔╎الࢪسـاله لـ** {samir} \n**⌔╎هو فقط من يستطيع فتحهـا**",
                 buttons=buttons,
             )
             await event.answer([result] if result else None)
@@ -434,7 +434,7 @@ async def inline_handler(event):  # sourcery no-metrics
             buttons = [Button.inline("فتـح الهمسـه 🗳", data=f"secret_{timestamp}")]
             result = builder.article(
                 title="** همسـه سـريـه**",
-                text=f"ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 **- همسـة سـࢪيـه 📠**\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n\n**⌔╎الهمسـة لـ** {zilzal} \n**⌔╎هو فقط من يستطيع ࢪؤيتهـا**",
+                text=f"ᯓ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 **- همسـة سـࢪيـه 📠**\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n\n**⌔╎الهمسـة لـ** {samir} \n**⌔╎هو فقط من يستطيع ࢪؤيتهـا**",
                 buttons=buttons,
             )
             await event.answer([result] if result else None)
@@ -457,7 +457,7 @@ async def inline_handler(event):  # sourcery no-metrics
             buttons = [Button.inline("إظهـاࢪ الࢪسـاله 📃", data=f"hide_{timestamp}")]
             result = builder.article(
                 title="**⌔╎ࢪسـاله مشفـࢪه 📟**",
-                text=f"ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 **- ࢪسـالة مشفـࢪه 📟**\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n\n**⌔╎اضغـط الـزࢪ لـ إظهـاࢪ الࢪسـاله**",
+                text=f"ᯓ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 **- ࢪسـالة مشفـࢪه 📟**\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n\n**⌔╎اضغـط الـزࢪ لـ إظهـاࢪ الࢪسـاله**",
                 buttons=buttons,
             )
             await event.answer([result] if result else None)
@@ -606,10 +606,10 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("قنـاة السـورس", "https://t.me/ZedThon"),
+                Button.url("قنـاة السـورس", "https://t.me/SEMO8L"),
                 Button.url(
                     "مطـور السـورس",
-                    "https://t.me/zzzzl1l",
+                    "https://t.me/DEV_SAMIR",
                 ),
             )
         ]
@@ -618,14 +618,14 @@ async def inline_handler(event):  # sourcery no-metrics
             url=ZEDLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "- لـ تنصيب سـورس زدثــون 𝗭𝗧𝗵𝗼𝗻", "md"
+            "- لـ تنصيب سـورس سيمو 𝐒𝐄𝐌𝐎", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="𝗭𝗧𝗵𝗼𝗻 𓅛",
+            title="𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎",
             description="روابـط التنصـيب",
-            url="https://t.me/ZedThon/105",
+            url="https://t.me/SEMO8L/18",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
