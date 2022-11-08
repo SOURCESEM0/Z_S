@@ -34,7 +34,7 @@ def close_connection(*_):
 
 signal.signal(signal.SIGTERM, close_connection)
 
-if Config.UPSTREAM_REPO == "zel":
+if Config.UPSTREAM_REPO == "SEMO":
     UPSTREAM_REPO_URL = "https://github.com/SOURCESEM0/Z_S"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
