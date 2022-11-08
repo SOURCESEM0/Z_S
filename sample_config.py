@@ -30,7 +30,7 @@ class Config(object):
     TZ = os.environ.get("TZ", "Africa/Cairo")
     # set this with required zed repo link
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/SOURCESEM0/Z_S"
+        "UPSTREAM_REPO", "https://github.com/SOURCESEM0/Z_S.git"
     )
     # External plugins repo
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
