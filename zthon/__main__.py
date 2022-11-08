@@ -16,7 +16,7 @@ from .utils import (
     verifyLoggerGroup,
 )
 
-LOGS = logging.getLogger("SEMO8L")
+LOGS = logging.getLogger("SEMO")
 cmdhr = Config.COMMAND_HAND_LER
 
 print(zthon.__copyright__)
