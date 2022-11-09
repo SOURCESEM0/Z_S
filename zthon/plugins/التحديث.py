@@ -86,17 +86,17 @@ async def update_bot(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    sandy = await event.edit(f"𓆩  𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 **- تحـديثـات السـورس** 𓆪\n**•─────────────────•**\n\n**•⎆┊تم التحـديث ⎌ بنجـاح ☑️**\n**•⎆┊جـارِ إعـادة تشغيـل بـوت زدثــون ⎋ انتظـر مـن 2 - 1 دقيقـه . . .𓆰**")
+    sandy = await event.edit(f"𓆩  𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 **- تحـديثـات السـورس** 𓆪\n**•─────────────────•**\n\n**•⎆┊تم التحـديث ⎌ بنجـاح ☑️**\n**•⎆┊جـارِ إعـادة تشغيـل بـوت سيمو ⎋ انتظـر مـن 2 - 1 دقيقـه . . .𓆰**")
     await event.client.reload(sandy)
 
 
 async def deploy(event, repo, ups_rem, ac_br, txt):
     if HEROKU_API_KEY is None:
-        return await event.edit(f"𓆩 [𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 - تحـديثـات السـورس](t.me/SEMO8L) 𓆪\n **•─────────────────•**\n** ⪼ لم تقـم بوضـع مربـع فـار HEROKU_API_KEY اثنـاء التنصيب وهـذا خطـأ .. قم بضبـط المتغيـر أولاً لتحديث بوت زدثــون ..؟!𓆰**")
+        return await event.edit(f"𓆩 [𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 - تحـديثـات السـورس](t.me/SEMO8L) 𓆪\n **•─────────────────•**\n** ⪼ لم تقـم بوضـع مربـع فـار HEROKU_API_KEY اثنـاء التنصيب وهـذا خطـأ .. قم بضبـط المتغيـر أولاً لتحديث بوت سيمو ..؟!𓆰**")
     heroku = heroku3.from_key(HEROKU_API_KEY)
     heroku_applications = heroku.apps()
     if HEROKU_APP_NAME is None:
-        await event.edit(f"𓆩 [𝙎𝙊𝙐𝙍𝘾𝞝 𝙕𝞝𝘿 - تحـديثـات السـورس](t.me/SEMO8L) 𓆪\n **•─────────────────•**\n** ⪼ لم تقـم بوضـع مربـع فـار HEROKU_APP_NAME اثنـاء التنصيب وهـذا خطـأ .. قم بضبـط المتغيـر أولاً لتحديث بوت زدثــون ..؟!𓆰**")
+        await event.edit(f"𓆩 [ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 - تحـديثـات السـورس](t.me/SEMO8L) 𓆪\n **•─────────────────•**\n** ⪼ لم تقـم بوضـع مربـع فـار HEROKU_APP_NAME اثنـاء التنصيب وهـذا خطـأ .. قم بضبـط المتغيـر أولاً لتحديث بوت سيمو ..؟!𓆰**")
         repo.__del__()
         return
     heroku_app = next(
