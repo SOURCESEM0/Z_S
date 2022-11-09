@@ -127,8 +127,8 @@ async def do_pm_permit_action(event, chat):  # sourcery no-metrics
             remwarns=remwarns,
         )
     elif gvarstatus("pmmenu") is None:
-        USER_BOT_NO_WARN = f"""𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
-◐━─━─━─━─𝙕𝞝𝘿─━─━─━─━◐
+        USER_BOT_NO_WARN = f"""𓆩𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎  - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
+◐━─━─━─━─𝐒 𝐄 𝐌 𝐎─━─━─━─━◐
 
 ❞ **هها هلو**  {mention} ❝
 
@@ -137,8 +137,8 @@ async def do_pm_permit_action(event, chat):  # sourcery no-metrics
 
 **⤶ فقط قل سبب مجيئك او اختـر احـد الخيـارات بالاسفـل ⬇️ وانتظـر الـرد ⏳**"""
     else:
-        USER_BOT_NO_WARN = f"""𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
-◐━─━─━─━─𝙕𝞝𝘿─━─━─━─━◐
+        USER_BOT_NO_WARN = f"""𓆩𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎  - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪
+◐━─━─━─━─𝐒 𝐄 𝐌 𝐎─━─━─━─━◐
 
 ❞ **هها هلو**  {mention} ❝
 
@@ -1010,5 +1010,5 @@ async def approve_p_m(event):
         event,
         APPROVED_PMs,
         file_name="قائمـة الحمايـة.txt",
-        caption="**- ️قائمـة المسمـوح لهـم ( المقبوليـن )**\n\n**- سـورس زدثــون** 𝙕𝙏𝙝𝙤𝙣 ",
+        caption="**- ️قائمـة المسمـوح لهـم ( المقبوليـن )**\n\n**- سـورس سيمو** 𝐒 𝐄 𝐌 𝐎 ",
     )
