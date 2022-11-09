@@ -81,7 +81,7 @@ async def startupmessage():
         if BOTLOG:
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/f821d27af168206b472ad.mp4",
+                "https://telegra.ph/file/ec05d05719cc93dd2b663.jpg",
                 caption="**•⎆┊تـم بـدء تشغـيل سـورس سيمو الخاص بك .. بنجاح 🧸♥️**",
                 buttons=[(Button.url("𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎", "t.me/SEMO8L"),)],
             )
@@ -117,9 +117,9 @@ async def startupmessage():
 async def mybot():
     ZELZAL = bot.me.first_name
     Malath = bot.uid
-    zel_zal = f"[{DEV_SAMIR}](tg://user?id={Malath})"
-    f"ـ {DEV_SAMIR}"
-    f"•⎆┊هــذا البــوت خــاص بـ {DEV_SAMIR} يمكـنك التواصــل معـه هـنا 🧸♥️"
+    zel_zal = f"[{ZELZAL}](tg://user?id={Malath})"
+    f"ـ {zel_zal}"
+    f"•⎆┊هــذا البــوت خــاص بـ {zel_zal} يمكـنك التواصــل معـه هـنا 🧸♥️"
     zilbot = await zedub.tgbot.get_me()
     bot_name = zilbot.first_name
     botname = f"@{zilbot.username}"
