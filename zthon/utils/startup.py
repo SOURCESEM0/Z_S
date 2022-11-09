@@ -1,4 +1,4 @@
-# ZedThon - zthon
+#edThon - zthon
 # Copyright (C) 2022 ZedThon . All Rights Reserved
 #< https://t.me/ZedThon >
 # This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
@@ -155,7 +155,7 @@ async def mybot():
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {DEV_SAMIR} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 ➯ @SEMO8L 🌐")
+            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 ➯ @SEMO8L 🌐")
         except Exception as e:
             print(e)
 
@@ -278,7 +278,7 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)\n\n𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 ➯ @SEMO8L"
+        descript = "**لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)**\n**𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 ➯ @SEMO8L**"
         photozed = await zedub.upload_file(file="zedthon/malath/Zpic.jpg")
         _, groupid = await create_supergroup(
             " جـروب اشـعارات سيمو", zedub, Config.TG_BOT_USERNAME, descript, photozed
@@ -307,7 +307,7 @@ async def verifyLoggerGroup():
         except Exception as e:
             LOGS.error("حدث خطأ اثناء التعرف على فار PM_LOGGER_GROUP_ID.\n" + str(e))
     else:
-        descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن رسـائل الخـاص.)\n\n𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 ➯ @SEMO8L"
+        descript = "**لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن رسـائل الخـاص.)**\n**𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 ➯ @SEMO8L**"
         photozed = await zedub.upload_file(file="zedthon/malath/Apic.jpg")
         _, groupid = await create_supergroup(
             "جـروب تخـزين سيمو", zedub, Config.TG_BOT_USERNAME, descript, photozed
