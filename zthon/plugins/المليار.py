@@ -43,7 +43,7 @@ async def _(event):
                     await zedub(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await jepiq(ImportChatInviteRequest(bott))
+                    await zedub(ImportChatInviteRequest(bott))
                 msg2 = await zedub.get_messages('@t06bot', limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
