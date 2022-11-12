@@ -19,7 +19,7 @@ async def _(event):
         channel_entity = await zedub.get_entity(bot_username)
         await zedub.send_message('@t06bot', '/start')
         await asyncio.sleep(5)
-        msg0 = await jepiq.get_messages('@t06bot', limit=1)
+        msg0 = await zedub.get_messages('@t06bot', limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(5)
         msg1 = await zedub.get_messages('@t06bot', limit=1)
