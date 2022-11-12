@@ -44,14 +44,14 @@ async def _(event):
                 except:
                     bott = url.split('/')[-1]
                     await jepiq(ImportChatInviteRequest(bott))
-                msg2 = await jepiq.get_messages('@t06bot', limit=1)
+                msg2 = await zedub.get_messages('@t06bot', limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await zedub.send_message("me", f"تم الاشتراك في {chs} قناة")
             except:
                 await zedub.send_message(event.chat_id, f"**خطأ , ممكن تبندت**")
                 break
-        await jepiq.send_message(event.chat_id, "**تم الانتهاء من التجميع !**")
+        await zedub.send_message(event.chat_id, "**تم الانتهاء من التجميع !**")
 
     else:
         await event.edit("يجب الدفع لاستعمال هذا الامر !")
